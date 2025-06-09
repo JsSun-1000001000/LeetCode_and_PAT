@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "c87631a08ecab17f",
+    "type": "split",
+    "children": [
+      {
+        "id": "07551a11ba3598ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0986b5e49ee5e7b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "力扣/【中级】数组/18.四数之和.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "18.四数之和"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d129af9b3447715b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4125990f3fa4e3df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1de8e800c337287",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "f0f34d01616d464d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "6ccb121e5d559a5c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "4a1680c45e5ccb52",
+    "type": "split",
+    "children": [
+      {
+        "id": "00952a00e7fe7e34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "030e0ba1a8d0c669",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "f6d0a1f6d722af22",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "209daf4613537214",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "3325715b1dcf33fd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "f1de8e800c337287",
+  "lastOpenFiles": [
+    "力扣/【中级】数组/16.最接近的三数之和.md",
+    "力扣/【中级】数组/18.四数之和.md",
+    "力扣/【中级】数组/15.三数之和.md",
+    "PAT甲级/20分集合/1104 Sum of Number Segments.md",
+    "PAT甲级/20分集合/1160 Forever.md",
+    "PAT甲级/20分集合/1148 Werewolf - Simple Version.md",
+    "PAT甲级/20分集合/1136 A Delayed Palindrome.md",
+    "PAT甲级/20分集合/1132 Cut Integer.md",
+    "PAT甲级/20分集合/1128 N Queens Puzzle.md",
+    "PAT甲级/20分集合/1116 Come on! Let's C.md",
+    "PAT甲级/20分集合/1108 Finding Average.md",
+    "PAT甲级/DFS、BFS/1130. Infix Expression.md",
+    "PAT甲级/DFS、BFS/1131. Subway Map.md",
+    "PAT甲级/DFS、BFS/1004. Counting Leaves.md",
+    "PAT甲级/图论相关/1122. Hamiltonian Cycle.md",
+    "PAT甲级/图论相关/1076. Forwards on Weibo.md",
+    "PAT甲级/图论相关/1126. Eulerian Path.md",
+    "PAT甲级/图论相关/1142. Maximal Clique.md",
+    "PAT甲级/图论相关/1150. Travelling Salesman Problem.md",
+    "PAT甲级/图论相关/图笔记.md",
+    "PAT甲级/图论相关/1013. Battle Over Cities.md",
+    "PAT甲级/并查集/1158. Telefraud Detection.md",
+    "PAT甲级/并查集/1114. Family Property.md",
+    "PAT甲级/并查集/1118. Birds in Forest.md",
+    "PAT甲级/并查集/1107. Social Clusters.md",
+    "PAT甲级/并查集/并查集套路.md",
+    "PAT甲级/并查集",
+    "PAT甲级/DFS、BFS",
+    "PAT甲级/30分集合",
+    "PAT甲级/25分集合",
+    "PAT甲级/图论相关",
+    "PAT甲级/20分集合",
+    "力扣/【中级】数组",
+    "力扣",
+    "PAT甲级"
+  ]
+}
