@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "18.四数之和"
             }
-          },
-          {
-            "id": "86e31bf15e61c2c6",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -160,12 +147,23 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "25f6c594dd1a3033",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -179,7 +177,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "86e31bf15e61c2c6",
+  "active": "0986b5e49ee5e7b2",
   "lastOpenFiles": [
     "README.md",
     "力扣/【中级】数组/16.最接近的三数之和.md",
