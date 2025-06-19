@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "力扣/【中级】数组/40.组合总和2.md",
+                "file": "力扣/【中级】数组/39.组合总和.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "40.组合总和2"
+              "title": "39.组合总和"
             }
           }
         ]
@@ -180,8 +180,8 @@
   },
   "active": "ab8eba625890b0b5",
   "lastOpenFiles": [
-    "力扣/【中级】数组/39.组合总和.md",
     "力扣/【中级】数组/40.组合总和2.md",
+    "力扣/【中级】数组/39.组合总和.md",
     "绘图集合/39png.png",
     "PAT甲级/未命名",
     "绘图集合/39题图.ex",
