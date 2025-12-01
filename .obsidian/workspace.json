@@ -11,14 +11,12 @@
             "id": "ab8eba625890b0b5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw_cn",
               "state": {
-                "file": "力扣/【中级】数组/39.组合总和.md",
-                "mode": "source",
-                "source": false
+                "file": "绘图集合/39题图.ex"
               },
               "icon": "lucide-file",
-              "title": "39.组合总和"
+              "title": "39题图"
             }
           }
         ]
@@ -44,7 +42,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -168,20 +166,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "ab8eba625890b0b5",
+  "active": "f1de8e800c337287",
   "lastOpenFiles": [
-    "力扣/【中级】数组/40.组合总和2.md",
+    "力扣/Untitled",
     "力扣/【中级】数组/39.组合总和.md",
+    "力扣/【中级】数组/40.组合总和2.md",
     "绘图集合/39png.png",
     "PAT甲级/未命名",
     "绘图集合/39题图.ex",
@@ -209,7 +209,6 @@
     "PAT甲级/图论相关/1076. Forwards on Weibo.md",
     "PAT甲级/图论相关/1126. Eulerian Path.md",
     "PAT甲级/图论相关/1142. Maximal Clique.md",
-    "PAT甲级/图论相关/1150. Travelling Salesman Problem.md",
     "PAT甲级/并查集",
     "PAT甲级/DFS、BFS",
     "PAT甲级/30分集合",
