@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "07551a11ba3598ff",
+        "id": "662aada599a04606",
         "type": "tabs",
         "children": [
           {
-            "id": "ab8eba625890b0b5",
+            "id": "ec03ff212df53815",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4a1680c45e5ccb52",
@@ -141,50 +140,43 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "力扣/【简单】数组/14.最长公共前缀.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
-            }
-          },
-          {
-            "id": "25f6c594dd1a3033",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "14.最长公共前缀 的大纲"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 427.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false,
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "ab8eba625890b0b5",
+  "active": "ec03ff212df53815",
   "lastOpenFiles": [
+    "力扣/【简单】数组/14.最长公共前缀.md",
+    "excalidraw 25-12-09 05.03.58.ex",
+    "力扣/【简单】数组/14.最长公共前缀.pdf",
     "力扣/【中级】数组/33.搜索旋转排序数组.md",
     "力扣/【中级】数组/18.四数之和.md",
-    "力扣/【简单】数组/14.最长公共前缀.md",
     "力扣/【中级】数组/15.三数之和.md",
     "力扣/【中级】数组/11.盛最多水的容器.md",
     "力扣/【中级】数组/34.在排序数组中查找元素的第一个和最后一个位置.md",
@@ -212,12 +204,9 @@
     "PAT甲级/DFS、BFS/1004. Counting Leaves.md",
     "PAT甲级/图论相关/1122. Hamiltonian Cycle.md",
     "PAT甲级/图论相关/1076. Forwards on Weibo.md",
-    "PAT甲级/图论相关/1126. Eulerian Path.md",
     "PAT甲级/并查集",
     "PAT甲级/DFS、BFS",
     "PAT甲级/30分集合",
-    "PAT甲级/25分集合",
-    "PAT甲级/图论相关",
-    "PAT甲级/20分集合"
+    "PAT甲级/25分集合"
   ]
 }
