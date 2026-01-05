@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "力扣/【中级】回溯/46.全排列Permutations.md",
+                "file": "力扣/【中级】数组/45.跳跃游戏2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "46.全排列Permutations"
+              "title": "45.跳跃游戏2"
             }
           }
         ]
@@ -182,8 +182,9 @@
   },
   "active": "ec03ff212df53815",
   "lastOpenFiles": [
-    "excalidraw 26-01-05 10.36.15.ex",
     "力扣/【中级】回溯/46.全排列Permutations.md",
+    "力扣/【中级】数组/45.跳跃游戏2.md",
+    "excalidraw 26-01-05 10.36.15.ex",
     "力扣/相关图片/40.剪枝2.png",
     "力扣/【中级】数组/18.四数之和.md",
     "力扣/未命名/未命名",
