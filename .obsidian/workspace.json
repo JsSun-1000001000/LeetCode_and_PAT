@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "力扣/【中级】数组/48、反转图像.md",
+                "file": "力扣/【中级】数组/73、矩阵置零.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "48、反转图像"
+              "title": "73、矩阵置零"
             }
           }
         ]
@@ -182,8 +182,9 @@
   },
   "active": "ec03ff212df53815",
   "lastOpenFiles": [
-    "力扣/【简单】数组/66.加一.md",
     "力扣/【中级】数组/48、反转图像.md",
+    "力扣/【中级】数组/73、矩阵置零.md",
+    "力扣/【简单】数组/66.加一.md",
     "力扣/【简单】数组/485.最大连续1的个数.md",
     "力扣/【中级】数组/238.除自身以外数组的乘积.md",
     "力扣/【简单】数组/724.寻找数组中心下标.md",
@@ -218,7 +219,6 @@
     "力扣/【简单】数组",
     "绘图集合/39png.png",
     "PAT甲级/未命名",
-    "PAT甲级/20分集合/1104 Sum of Number Segments.md",
-    "PAT甲级/20分集合/1160 Forever.md"
+    "PAT甲级/20分集合/1104 Sum of Number Segments.md"
   ]
 }
