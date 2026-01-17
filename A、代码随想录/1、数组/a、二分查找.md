@@ -275,3 +275,8 @@ public:
 };
 ```
 牛顿迭代法【挖坑】
+
+## [367. 有效的完全平方数 - 力扣（LeetCode）](https://leetcode.cn/problems/valid-perfect-square/description/)
+
+## 代码
+
