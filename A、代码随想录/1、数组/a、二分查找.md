@@ -1,7 +1,9 @@
 
 [704. 二分查找 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-search/)
 
-**边界的处理**
+1. 要清楚区间的定义
+2. 是用左闭右开，还是左右闭区间，不要混在一起
+3. 坚持循环不变量的原则
 ## 第一种
 
 左闭右闭区间
@@ -60,14 +62,14 @@ public:
 ```
 ---
 
-[704. 二分查找 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-search/)
-
+[35. 搜索插入位置 - 力扣（LeetCode）](https://leetcode.cn/problems/search-insert-position/description/)
 ## 代码
 暴力：
 ```cpp
 
 ```
 二分查找法：
+左右闭区间：
 ```cpp
 class Solution {
 public:
@@ -90,4 +92,27 @@ public:
     }
 };
 ```
-
+左闭右开：
+```cpp
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        int left = 0;
+        int right = nums.size();// 定义target在左闭右开的区间里，[left, right)  target
+        while(left < right){
+            int middle = left + (right - left)/2;
+            if(target < nums[middle]){
+                //左闭右开区间 不包含右边界
+                right = middle;
+            }
+            else if(target > nums[middle]){
+                left = middle + 1;
+            }
+            else{
+                return middle;
+            }
+        }
+        return right;
+    }
+};
+```
