@@ -129,6 +129,7 @@ public:
 
 # [34. 在排序数组中查找元素的第一个和最后一个位置 - 力扣（LeetCode）](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
 
+最好分块处理
 ## 代码
 暴力：
 ```cpp
@@ -177,5 +178,57 @@ public:
 };
 ```
 参考答案是：用两个二分查找分别查找左边界和右边界
+```cpp
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int left = getLeftEdge(nums, target);
+        int right = getRightEdge(nums, target);
+        if(left == -2 || right == -2){
+            return {-1, -1};
+        }
+        else if(right - left > 1){
+            return {left + 1, right - 1};
+        }
+        else{
+            return {-1,-1};
+        }
+    }
+private:
+    int getRightEdge(vector<int>& nums, int target){
+        int left = 0;
+        int right = nums.size()-1;
+        int rightEdge = -2;
+        while(left <= right){
+            int middle = left + (right - left)/2;
+            if(target < nums[middle]){
+                right = middle - 1;
+            }
+            else {
+                left = middle + 1;
+                rightEdge = left;
+            }
+        }
+        return rightEdge;
+    }
+    int getLeftEdge(vector<int>& nums, int target){
+        int left = 0;
+        int right = nums.size()-1;
+        int leftEdge = -2;
+        while(left <= right){
+            int middle = left + (right - left)/2;
+            if(target <= nums[middle]){
+                right = middle - 1;
+                leftEdge = right;
+            }
+            else {
+                left = middle + 1;
+            }
+        }
+        return leftEdge;
+    }
+};
+```
+
 
 
