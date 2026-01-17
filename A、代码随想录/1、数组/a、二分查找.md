@@ -38,5 +38,17 @@ public:
 ```cpp
 class Solution
 public:
-	int search()
+	int search(vector<int>& nums, int target){
+		int left = 0;
+		int right = nums.size()-1;
+		while(left < right){
+			int middle = left + ((right - left)>>1);
+			if( nums[middle] < right){
+				right = middle - 1;
+			}
+			else if( nums[middle]){
+				
+			}
+		}
+	}
 ```
