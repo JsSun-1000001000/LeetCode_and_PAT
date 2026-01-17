@@ -1,5 +1,5 @@
 
-[704. 二分查找 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-search/)
+# [704. 二分查找 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-search/)
 
 1. 要清楚区间的定义
 2. 是用左闭右开，还是左右闭区间，不要混在一起
@@ -62,7 +62,7 @@ public:
 ```
 ---
 
-[35. 搜索插入位置 - 力扣（LeetCode）](https://leetcode.cn/problems/search-insert-position/description/)
+# [35. 搜索插入位置 - 力扣（LeetCode）](https://leetcode.cn/problems/search-insert-position/description/)
 ## 代码
 暴力：
 ```cpp
@@ -126,3 +126,12 @@ public:
     }
 };
 ```
+
+# [34. 在排序数组中查找元素的第一个和最后一个位置 - 力扣（LeetCode）](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
+
+## 代码
+暴力：
+```cpp
+
+```
+二分查找：
