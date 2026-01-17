@@ -36,7 +36,7 @@ public:
 左闭右开
 
 ```cpp
-class Solution
+class Solution{
 public:
 	int search(vector<int>& nums, int target){
 		int left = 0;
@@ -44,11 +44,16 @@ public:
 		while(left < right){
 			int middle = left + ((right - left)>>1);
 			if( nums[middle] < right){
-				right = middle - 1;
+				right = middle;
 			}
-			else if( nums[middle]){
-				
+			else if( nums[middle] > left ){
+				left = middle +1;
+			}
+			else{
+				return middle;
 			}
 		}
+		return -1;
 	}
+};
 ```
