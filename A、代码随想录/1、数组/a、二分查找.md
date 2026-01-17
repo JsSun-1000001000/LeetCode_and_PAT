@@ -232,5 +232,30 @@ private:
 
 ## [69. x 的平方根 - 力扣（LeetCode）](https://leetcode.cn/problems/sqrtx/description/)
 
-
+## 代码
+二分查找法：
+注意：
+- 乘积long long
+- 左边界小于等于的时候就可以跳出了
+```cpp
+class Solution {
+public:
+    int mySqrt(int x) {
+        int left = 0;
+        int right = x;
+        int res = -1;
+        while(left <= right){
+            int middle = left + (right - left)/2;
+            if((long long)middle * middle > x){
+                right = middle - 1;
+            }
+            else if((long long)middle * middle <= x){
+                res = middle;
+                left = middle + 1;
+            }
+        }
+        return res;
+    }
+};
+```
 
