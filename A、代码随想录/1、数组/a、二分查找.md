@@ -129,7 +129,7 @@ public:
 
 # [34. 在排序数组中查找元素的第一个和最后一个位置 - 力扣（LeetCode）](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
 
-最好分块处理
+最好分块处理，不要混在一起
 ## 代码
 暴力：
 ```cpp
@@ -229,6 +229,8 @@ private:
     }
 };
 ```
+
+## [69. x 的平方根 - 力扣（LeetCode）](https://leetcode.cn/problems/sqrtx/description/)
 
 
 
