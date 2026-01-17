@@ -38,4 +38,19 @@ public:
 ## [26. 删除有序数组中的重复项 - 力扣（LeetCode）](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/description/)
 
 ## 代码
-
+```cpp
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int slow = 0;
+        for(int fast = slow; fast < nums.size(); fast++){
+            if(nums[fast]!=nums[slow]){
+                slow++;
+                nums[slow] = nums[fast];
+            }
+        }
+        return slow + 1;
+    }
+};
+```
+## 
