@@ -132,6 +132,49 @@ public:
 ## 代码
 暴力：
 ```cpp
-
+//zaishuo
 ```
 二分查找：
+```cpp
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int start = -1;
+        int end = -1;
+        int left = 0;
+        int right = nums.size() - 1;//左右闭区间
+        while( left <= right ){
+            //三种情况
+            //第一种 超出边界 -1-1
+            //第二种 没有返回 -1-1
+            //第三种 左右边界
+            int middle = left + (right - left)/2;
+            if(target < nums[middle]){
+                right = middle - 1;
+            }
+            else if(target > nums[middle]){
+                left = middle + 1;
+            }
+            else{
+                //找到了target
+                start = end = middle;
+                while(start >= 0 && nums[start]==target){
+                    start = start - 1;
+                }
+                while(end < nums.size() && nums[end]==target){
+                    end = end + 1;
+                }
+                if(nums.size() == 1){
+                    return {0,0};
+                }
+                else{
+                    return {start + 1,end - 1};
+                }
+            }
+        }
+        return {start,end};
+    }
+};
+```
+参考答案是：用两个二分查找分别查找zuo'bian
+
