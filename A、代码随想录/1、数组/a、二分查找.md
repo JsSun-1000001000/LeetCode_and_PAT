@@ -279,4 +279,28 @@ public:
 ## [367. 有效的完全平方数 - 力扣（LeetCode）](https://leetcode.cn/problems/valid-perfect-square/description/)
 
 ## 代码
+二分查找：
+```cpp
+class Solution {
+public:
+    bool isPerfectSquare(int num) {
+        int left = 0;
+        int right = num;
+        while(left <= right){
+            int middle = left + (right - left)/2;
+            if( (long long)middle * middle > num){
+                right = middle - 1;
+            }
+            else if((long long)middle * middle < num){
+                left = middle + 1;
+            }
+            else{
+                return true;
+            }
+        }
+        return false;
+    }
+};
+```
+
 
