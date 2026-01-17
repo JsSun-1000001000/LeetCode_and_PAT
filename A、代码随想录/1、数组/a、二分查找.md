@@ -57,4 +57,11 @@ public:
 	}
 };
 ```
+---
 
+[704. 二分查找 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-search/)
+
+## 代码
+```cpp
+
+```
