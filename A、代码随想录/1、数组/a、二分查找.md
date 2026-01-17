@@ -1,6 +1,7 @@
 
 [704. 二分查找 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-search/)
 
+**边界的处理**
 ## 第一种
 
 左闭右闭区间
@@ -69,43 +70,24 @@ public:
 二分查找法：
 ```cpp
 class Solution {
-
 public:
-
     int searchInsert(vector<int>& nums, int target) {
-
         int left = 0;
-
         int right = nums.size() - 1;
-
         while( left <= right ){
-
             int middle = left + (right-left)/2;
-
             if( nums[middle] > target ){
-
                 right = middle - 1;
-
             }
-
             else if( nums[middle] < target ){
-
                 left = middle + 1;
-
             }
-
             else{
-
                 return middle;
-
             }
-
         }
-
         return  right+1;
-
     }
-
 };
 ```
 
