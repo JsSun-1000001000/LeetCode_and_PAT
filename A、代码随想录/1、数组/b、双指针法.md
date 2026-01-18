@@ -155,4 +155,31 @@ public:
     }
 };
 ```
+## [977. 有序数组的平方 - 力扣（LeetCode）](https://leetcode.cn/problems/squares-of-a-sorted-array/description/)
+```cpp
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& nums) {
+        int left = 0;
+        int right = nums.size() - 1;
 
+        vector<int> res(nums.size());
+
+        int pos = nums.size()-1;
+
+        while(left <= right){
+            if(nums[left]*nums[left] >= nums[right]*nums[right]){
+                res[pos] = nums[left]*nums[left];
+                left++;
+                pos--;
+            }
+            else{
+                res[pos] = nums[right]*nums[right];
+                right--;
+                pos--;
+            }
+        }
+        return res;
+    }
+};
+```
