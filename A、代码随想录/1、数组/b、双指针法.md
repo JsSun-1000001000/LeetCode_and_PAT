@@ -103,5 +103,56 @@ public:
 };
 ```
 双指针：
+```cpp
+class Solution {
+public:
+    bool backspaceCompare(string s, string t) {
+        //双指针
+        int sPoint = s.size() - 1;
+        int tPoint = t.size() - 1;
 
+        int sCount = 0;
+        int tCount = 0;
+
+        while(1){
+            while(sPoint >= 0){
+                if(s[sPoint] == '#'){
+                    sCount++;
+                }
+                else{
+                    if(sCount > 0){
+                        sCount --;
+                    }
+                    else{
+                        break;
+                    }
+                }
+                sPoint --;
+            }
+            while(tPoint >= 0){
+                if(t[tPoint] == '#'){
+                    tCount++;
+                }
+                else{
+                    if(tCount > 0){
+                        tCount --;
+                    }
+                    else{
+                        break;
+                    }
+                }
+                tPoint --;
+            }
+            if(sPoint < 0 || tPoint < 0){
+                break;
+            }
+            if(s[sPoint]!=t[tPoint]) return false;
+            sPoint --;
+            tPoint --;
+        }
+        if(sPoint == -1 && tPoint == -1)return true;
+        return false;
+    }
+};
+```
 
