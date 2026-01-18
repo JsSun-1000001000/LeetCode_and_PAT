@@ -156,6 +156,22 @@ public:
 };
 ```
 ## [977. 有序数组的平方 - 力扣（LeetCode）](https://leetcode.cn/problems/squares-of-a-sorted-array/description/)
+暴力：
+```cpp
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& A) {
+        for (int i = 0; i < A.size(); i++) {
+            A[i] *= A[i];
+        }
+        sort(A.begin(), A.end()); // 快速排序
+        return A;
+    }
+};
+```
+
+双指针法：
+数组其实是有序的， 只不过负数平方之后可能成为最大数了。那么数组平方的最大值就在数组的两端，不是最左边就是最右边，不可能是中间。此时可以考虑双指针法了
 ```cpp
 class Solution {
 public:
@@ -183,3 +199,5 @@ public:
     }
 };
 ```
+
+
