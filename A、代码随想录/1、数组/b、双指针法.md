@@ -56,3 +56,19 @@ public:
 ## [283. 移动零 - 力扣（LeetCode）](https://leetcode.cn/problems/move-zeroes/description/)
 
 ## 代码
+```cpp
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int slow = 0;
+        int fast = 0;
+        while(fast < nums.size()){
+            if(nums[fast]!=0){
+                swap(nums[fast],nums[slow]);
+                slow++;
+            }
+            fast++;
+        }
+    }
+};
+```
