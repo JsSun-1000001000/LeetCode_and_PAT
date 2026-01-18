@@ -25,3 +25,24 @@
 
 **滑动窗口的精妙之处在于根据当前子序列和大小的情况，不断调节子序列的起始位置。从而将O(n^2)暴力解法降为O(n)。**
 
+```cpp
+class Solution {
+public:
+    int minSubArrayLen(int target, vector<int>& nums) {
+        int left = 0;
+        int subLength = 0;
+        int sum = 0;
+        int result = INT_MAX;
+
+        for( int right = 0; right < nums.size(); right++){
+            sum += nums[right];
+            while(sum >= target){
+                subLength = right-left+1;
+                result = result < subLength ? result : subLength;
+                sum -= nums[left++];
+            }
+        }
+        return result == INT_MAX ? 0 : result;
+    }
+};
+```
