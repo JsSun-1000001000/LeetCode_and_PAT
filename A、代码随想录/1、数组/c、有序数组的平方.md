@@ -46,3 +46,28 @@ public:
     }
 };
 ```
+
+## [904. 水果成篮 - 力扣（LeetCode）](https://leetcode.cn/problems/fruit-into-baskets/description/)
+```cpp
+class Solution {
+public:
+    int totalFruit(vector<int>& fruits) {
+        int left = 0;
+        int res = 0;
+        unordered_map<int,int> count;
+        for( int right = 0; right < fruits.size(); right ++){
+            ++count[fruits[right]];
+            while(count.size()>2){
+                auto it = count.find(fruits[left]);
+                --it->second;
+                if(it->second == 0){
+                    count.erase(it);
+                }
+                ++left;
+            }
+            res = max(res, right - left + 1);
+        }
+        return res;
+    }
+};
+```
