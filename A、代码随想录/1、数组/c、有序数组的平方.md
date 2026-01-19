@@ -24,6 +24,7 @@
 解题的关键在于 窗口的起始位置如何移动
 
 **滑动窗口的精妙之处在于根据当前子序列和大小的情况，不断调节子序列的起始位置。从而将O(n^2)暴力解法降为O(n)。**
+## [209. 长度最小的子数组 - 力扣（LeetCode）](https://leetcode.cn/problems/minimum-size-subarray-sum/description/)
 
 ```cpp
 class Solution {
