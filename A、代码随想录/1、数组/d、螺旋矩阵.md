@@ -1,4 +1,4 @@
-螺旋矩阵要坚持一致的左闭右开，或者zuo'kai'you'bi
+螺旋矩阵要坚持一致的左闭右开，或者左开右闭区间，这样才能按照统一的规则画下来
 
 ## [59. 螺旋矩阵 II - 力扣（LeetCode）](https://leetcode.cn/problems/spiral-matrix-ii/description/)
 ```cpp
