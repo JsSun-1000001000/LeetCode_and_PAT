@@ -1,3 +1,5 @@
+螺旋矩阵要坚持一致的左闭右开，或者zuo'kai'you'bi
+
 ## [59. 螺旋矩阵 II - 力扣（LeetCode）](https://leetcode.cn/problems/spiral-matrix-ii/description/)
 ```cpp
 class Solution {
@@ -20,5 +22,7 @@ public:
     }
 };
 ```
+
+
 
 
