@@ -72,3 +72,30 @@ public:
     }
 };
 ```
+
+```cpp
+class Solution {
+public:
+    int totalFruit(vector<int>& fruits) {
+        int left = 0;
+        vector<int> intCounts(fruits.size());//记录某种水果采摘的个数
+        int kinds = 0;//记录采摘水果的种类
+        int ans = 0;
+        for(int i=0;i<fruits.size();i++){
+            if(intCounts[fruits[i]] == 0){
+                kinds++;
+            }
+            intCounts[fruits[i]]++;
+            while(kinds >2){//发现采摘种类大于2时，left开始右移
+                intCounts[fruits[left]]--;//每次右移都丢掉对应篮子里的水果
+                if(intCounts[fruits[left]] == 0){ // 直到把某个篮子里的水果丢空则种类-1.
+                    kinds--;
+                }
+                left++;
+            }
+            ans = max(ans,i-left+1);
+        }
+        return ans;
+    }
+};
+```
