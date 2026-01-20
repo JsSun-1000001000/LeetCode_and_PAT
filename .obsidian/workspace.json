@@ -11,14 +11,12 @@
             "id": "ec03ff212df53815",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "A、代码随想录/1、数组/g、总结.md",
-                "mode": "source",
-                "source": false
+                "file": "A、代码随想录/1、数组/数组方法.png"
               },
-              "icon": "lucide-file",
-              "title": "g、总结"
+              "icon": "lucide-image",
+              "title": "数组方法"
             }
           }
         ]
@@ -180,10 +178,11 @@
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "ec03ff212df53815",
+  "active": "f1de8e800c337287",
   "lastOpenFiles": [
-    "A、代码随想录/1、数组/f、开发商买土地.md",
     "A、代码随想录/1、数组/g、总结.md",
+    "A、代码随想录/1、数组/数组方法.png",
+    "A、代码随想录/1、数组/f、开发商买土地.md",
     "A、代码随想录/1、数组/e、区间和.md",
     "A、代码随想录/1、数组/d、螺旋矩阵.md",
     "B、力扣/【中级】数组/59、螺旋矩阵2.md",
@@ -216,7 +215,6 @@
     "B、力扣/【中级】数组/18.四数之和.md",
     "力扣/未命名/未命名",
     "B、力扣/【中级】回溯",
-    "B、力扣/【简单】数组/35.搜索插入位置.md",
     "B、力扣/相关图片",
     "B、力扣/【简单】数组/14.最长公共前缀.pdf",
     "Z、绘图集合/39png.png"
