@@ -38,5 +38,21 @@ public:
 
 递归的思路移除元素
 ```cpp
-
+class solution{
+public:
+	listnode* remove(listnode* head, int val){
+		if(head == nullptr){
+			return nullptr;
+		}
+		if(head->val == val){
+			listnode* newhead = remove(head->next,val);
+			delete head;
+			return newhead;
+		}
+		else{
+			head->next = remove(head->next, val);
+			return head;
+		}
+	}
+}
 ```
