@@ -58,6 +58,68 @@ public:
 };
 ```
 
+```cpp
+class Solution {
+private:
+
+    static constexpr int directions[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+
+public:
+
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+
+        if(matrix.size() == 0 || matrix[0].size() == 0){
+
+            return {};
+
+        }
+
+        int rows = matrix.size();
+
+        int columns = matrix[0].size();
+
+  
+
+        vector<vector<bool>> visited(rows, vector<bool>(columns));
+
+        int all = rows*columns;
+
+        vector<int> result(all);
+
+        int row = 0;
+
+        int column = 0;
+
+        int directionIndex = 0;
+
+        for(int i = 0; i < all; i++){
+
+            result[i] = matrix[row][column];
+
+            visited[row][column] = true;
+
+            int nextRow = row + directions[directionIndex][0],
+
+            nextColumn = column + directions[directionIndex][1];
+
+            if(nextRow<0||nextRow>=rows||nextColumn<0||nextColumn>=columns||visited[nextRow][nextColumn]){
+
+                directionIndex = (directionIndex + 1)%4;
+
+            }
+
+            row+=directions[directionIndex][0];
+
+            column+=directions[directionIndex][1];
+
+        }
+
+        return result;
+
+    }
+
+};
+```
 
 
 
