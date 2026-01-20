@@ -23,6 +23,41 @@ public:
 };
 ```
 
+## [54. 螺旋矩阵 - 力扣（LeetCode）](https://leetcode.cn/problems/spiral-matrix/description/)
+```cpp
+class Solution {
+public:
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        vector<int> ans;
+        if(matrix.size() == 0 || matrix[0].size() == 0){
+           return {};
+        }
+        int a = 0, b = matrix.size()-1;//up right
+        int c = 0, d = matrix[0].size()-1;//down left
+
+        while(true){
+            for(int i = c;i<=d;i++){
+                ans.insert(matrix.begin()+i,matrix[a][i]);
+            }
+            if(++a>d)break;
+            for(int i = a;i<=b;i++){
+                ans.insert(matrix.begin()+d+i,matrix[i][d]);
+            }
+            if(--d>d)break;
+            for(int i = d;i<=c;i--){
+                ans.insert(matrix.begin()+d+b+i,matrix[b][i]);
+            }
+            if(--b>d)break;
+            for(int i = b;i<=a;i--){
+                ans.insert(matrix.begin()+d+b+c+i,matrix[i][c]);
+            }
+            if(++c>d)break;
+        }
+        return ans;
+    }
+};
+```
+
 
 
 
