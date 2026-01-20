@@ -56,3 +56,186 @@ public:
 	}
 }
 ```
+
+## [707. 设计链表 - 力扣（LeetCode）](https://leetcode.cn/problems/design-linked-list/)
+```cpp
+class MyLinkedList {
+
+public:
+
+    struct listnode{
+
+        int val;
+
+        listnode* next;
+
+        listnode(int x):val(x),next(nullptr){}
+
+    };
+
+  
+
+    MyLinkedList() {
+
+        //定义一个虚拟头节点
+
+        dummyhead = new listnode(0);
+
+        size = 0;
+
+    }
+
+    int get(int index) {
+
+        if(index < 0 || index > size-1){
+
+            return -1;
+
+        }
+
+        listnode* cur = dummyhead->next;
+
+        while(index--){
+
+            cur = cur->next;
+
+        }
+
+        return cur->val;
+
+    }
+
+    void addAtHead(int val) {
+
+        listnode* newnode = new listnode(val);
+
+        newnode->next = dummyhead->next;
+
+        dummyhead->next = newnode;
+
+        size++;
+
+    }
+
+    void addAtTail(int val) {
+
+        listnode* newnode = new listnode(val);
+
+        listnode* cur = dummyhead;
+
+        while(cur->next != nullptr){
+
+            cur = cur->next;
+
+        }
+
+        cur->next = newnode;
+
+        size++;
+
+    }
+
+    void addAtIndex(int index, int val) {
+
+        //先遍历后插入
+
+        if(index < 0){
+
+            index = 0;
+
+        }
+
+        if(index > size){
+
+            return;
+
+        }
+
+        listnode* cur = dummyhead;
+
+        listnode* newnode = new listnode(val);
+
+        while(index--){
+
+            cur = cur->next;
+
+        }
+
+        newnode->next = cur->next;
+
+        cur->next = newnode;
+
+        size++;
+
+    }
+
+    void deleteAtIndex(int index) {
+
+        if(index < 0 || index > size-1){
+
+            return;
+
+        }
+
+        listnode* cur = dummyhead;
+
+        while(index--){
+
+            cur = cur->next;
+
+        }
+
+        listnode* tmp = cur->next;
+
+        cur->next = cur->next->next;
+
+        delete tmp;
+
+        size--;
+
+    }
+
+    void printLinkedList() {
+
+        listnode* cur = dummyhead;
+
+        while (cur->next != nullptr) {
+
+            cout << cur->next->val << " ";
+
+            cur = cur->next;
+
+        }
+
+        cout << endl;
+
+    }
+
+    private:
+
+    int size;
+
+    listnode* dummyhead;
+
+};
+
+  
+
+/**
+
+ * Your MyLinkedList object will be instantiated and called as such:
+
+ * MyLinkedList* obj = new MyLinkedList();
+
+ * int param_1 = obj->get(index);
+
+ * obj->addAtHead(val);
+
+ * obj->addAtTail(val);
+
+ * obj->addAtIndex(index,val);
+
+ * obj->deleteAtIndex(index);
+
+ */
+```
