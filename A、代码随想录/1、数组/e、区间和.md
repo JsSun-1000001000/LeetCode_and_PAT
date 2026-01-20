@@ -7,3 +7,9 @@
 要求区间和，直接右边界的前缀和-左边界的前缀和=区间和 
 
 大量输入输出，最好用`scanf printf`耗时小
+
+## [58. 区间和（第九期模拟笔试）](https://kamacoder.com/problempage.php?pid=1070)
+
+```cpp
+
+```
