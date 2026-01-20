@@ -11,5 +11,34 @@
 ## [58. 区间和（第九期模拟笔试）](https://kamacoder.com/problempage.php?pid=1070)
 
 ```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
 
+int main(){
+    int n;
+    int a,b;
+    scanf("%d",&n);
+
+    vector<int> vec(n);
+    vector<int> p(n);
+    int presum = 0;
+    for(int i = 0; i < n; i++){
+        scanf("%d",&vec[i]);
+        presum += vec[i];
+        p[i] = presum;
+    }
+
+    while(~scanf("%d%d",&a,&b)){
+        int sum;
+        if(a == 0){
+            sum = p[b];
+        }
+        else{
+            sum = p[b]-p[a-1];
+        }
+        printf("%d\n",sum);
+    }
+    return 0;
+}
 ```
