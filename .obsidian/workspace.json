@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A、代码随想录/2、链表/d、删除链表倒数第n个节点.md",
+                "file": "A、代码随想录/2、链表/e、链表相交.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "d、删除链表倒数第n个节点"
+              "title": "e、链表相交"
             }
           }
         ]
@@ -182,8 +182,8 @@
   },
   "active": "ec03ff212df53815",
   "lastOpenFiles": [
-    "A、代码随想录/2、链表/e、链表相交.md",
     "A、代码随想录/2、链表/d、删除链表倒数第n个节点.md",
+    "A、代码随想录/2、链表/e、链表相交.md",
     "A、代码随想录/2、链表/c、两两交换链表中的节点.md",
     "A、代码随想录/2、链表/a、链表移除&设计.md",
     "A、代码随想录/2、链表/b、反转链表.md",
