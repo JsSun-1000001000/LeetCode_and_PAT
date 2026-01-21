@@ -1,3 +1,4 @@
+## [19. 删除链表的倒数第 N 个结点 - 力扣（LeetCode）](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
 典中典，
 
 两个小指针一前一后跑，前面的边跑边计数，计到n，后面的开始同步跑
