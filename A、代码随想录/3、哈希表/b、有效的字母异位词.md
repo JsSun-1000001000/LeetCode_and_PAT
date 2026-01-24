@@ -20,3 +20,41 @@ public:
     }
 };
 ```
+
+## [49. 字母异位词分组 - 力扣（LeetCode）](https://leetcode.cn/problems/group-anagrams/description/)
+
+```cpp
+class Solution {
+
+public:
+
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+
+        unordered_map<string, vector<string>> m;
+
+        for(string &s : strs){
+
+            string sorted_s = s;
+
+            ranges::sort(sorted_s);
+
+            m[sorted_s].push_back(s);//sort 后 相同的分到一组
+
+        }
+
+        vector<vector<string>> res;
+
+        res.reserve(m.size());
+
+        for(auto& [_,value] : m){
+
+            res.push_back(value);
+
+        }
+
+        return res;
+
+    }
+
+};
+```
