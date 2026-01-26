@@ -373,3 +373,82 @@ where t.a1 is not null;
 作者：ShawnLee0223  
 链接：[https://www.nowcoder.com/discuss/353159669868863488](https://www.nowcoder.com/discuss/353159669868863488)  
 来源：牛客网
+
+---
+# Task1
+
+You are given two tables, `department` and `employee`, with the following structure:
+
+[复制代码](#)
+
+|   |   |
+|---|---|
+|1<br><br>2<br><br>3<br><br>4<br><br>5<br><br>6<br><br>7<br><br>8<br><br>9<br><br>10<br><br>11<br><br>12<br><br>13<br><br>14|`create` `table` `department (`<br><br>    `dept_id` `integer` `not` `null``,`<br><br>    `dept_name` `varchar``(30)` `not` `null``,`<br><br>    `dept_location` `varchar``(30)` `not` `null``,`<br><br>    `unique``(dept_id)`<br><br>`);`<br><br>`create` `table` `enployee (`<br><br>    `emp_id` `integer` `not` `null``,`<br><br>    `emp_name` `varchar``(50)` `not` `null``,`<br><br>    `dept_id` `integer` `not` `null``,`<br><br>    `salary` `integer` `not` `null``,`<br><br>    `unique``(emp_id)`<br><br>`);`|
+
+Each record in the table `department` represents a department which might hire some employees. Each record in the table `employee` represents an employee who works for one of the departments from the table `department`. The salary of each employee is known. (However, the locations of the departments are not relevant here.)
+
+Write an SQL query that returns a table comprising all the departments (`dept_id`) in the table `department` that hire at least one employee, the number of people they employ and the sum of salaries in each department. The table should be ordered by `dept_id` (in increasing order).
+
+# Task2
+
+Codility is a company that creates programming tasks which are solved by candidates. After submitting their solution to a task, each candidate receives a report containing the number of points their solution scored, which is an integer between 0 and 100.
+
+You are given two tables, `tasks` and `reports`, with the following structure:
+
+[复制代码](#)
+
+|   |   |
+|---|---|
+|1<br><br>2<br><br>3<br><br>4<br><br>5<br><br>6<br><br>7<br><br>8<br><br>9<br><br>10<br><br>11<br><br>12<br><br>13|`0create` `table` `tasks (`<br><br>    `id` `integer` `not` `null``,`<br><br>    `name` `varchar``(40)` `not` `null``,`<br><br>    `unique``(id)`<br><br>`);`<br><br>`create` `table` `reports(`<br><br>    `id` `integer` `not` `null``,`<br><br>    `task_id` `integer` `not` `null``,`<br><br>    `candidate` `varchar``(40)` `not` `null``,`<br><br>    `score` `integer` `not` `null``,`<br><br>    `unique``(id)`<br><br>`);`|
+
+Your task is to write an SQL query which assigns a difficulty rating to depends on the average score of all candidates' solutions submitted each task **having at least one solution**. The difficulty of the task depends on the average score of all candidates' solutions submitted for this task. It is possible that one candidate have submitted multiple solutions for the same task; in this case, all of those solutions should be included in the average.
+
+There are three difficulties: "Easy' , "Medium" and "Hard".
+
+- If the average score for the task is lower than or equal to 20, then its difficulty is "Hard".
+- If the average is higher than 20 but lower than or equal to 60, then its difficulty is "Medium".
+- If the average is higher than 60, its difficulty is "Easy".
+
+For example, if the average score of the task is 50, then its difficulty is "Medium" because the average score is greater than 20 but less then 60.
+
+Your query should return a table containing three columns: `task_id`(ID of task), `task_name` (name of task) and `difficulty` - the difficulty of the task, which is one of three possible strings: Easy ", "Medium" or "Hard". Rows should be ordered by increasing `task_id`. If no solutions exist for some task, that task should not appear in your table.
+
+# Task3
+
+Consider a non-empty string S= `S[0]S[1]... s[Q-1]` consisting of Q characters. The _period_ of this string is the smallest positive integer P such that:
+
+- P ≤ Q / 2 and
+- S[K] = S[K+P] for every K, where 0 ≤ K < Q-P
+
+For example, 8 is the period of "`codilitycodilityco`" and 7 is the period of "`abracadabracadabra`".
+
+A positive integer M is the _binary period_ of a positive integer N if M is the period of the binary representation of N.
+
+For example, 4 is the binary period of 955, because the binary representation of 955 is "1110111011" and its period is 4.
+
+You are given an implementation of a function:
+
+`def solution(N):`
+
+This function, when given a positive integer N, returns the binary period of N. The function returns -1 if N does not have a binary period.
+
+For example, given N = 955 the function returns 4, as explained in the example above.
+
+The attached code is still **incorrect** for some inputs. Despite the error(s), the code may produce a correct answer for the example test cases. The goal of the exercise is to find and fix the bug(s) in the implementation. You can modify at most **two** lines.
+
+Assume that:
+
+- N is an integer within the range [1..1,000,000,000].
+
+In your solution, focus on **correctness**. The performance of your solution will not be the focus of the assessment.
+
+[复制代码](#)
+
+|   |   |
+|---|---|
+|1<br><br>2<br><br>3<br><br>4<br><br>5<br><br>6<br><br>7<br><br>8<br><br>9<br><br>10<br><br>11<br><br>12<br><br>13<br><br>14<br><br>15<br><br>16|`def solution(n):`<br><br>    `d = [``0``] *` `30`<br><br>    `l =` `0`<br><br>    `while` `(n >` `0``):`<br><br>        `d[l] = n %` `2`<br><br>        `n` `//= 2`<br><br>        `l +=` `1`<br><br>    `for` `p in range(``1``,` `1` `+ l):`<br><br>        `ok = True`<br><br>        `for` `i in range(l - p):`<br><br>            `if` `d[i] != d[i + p]:`<br><br>                `ok = False`<br><br>                `break`<br><br>        `if` `ok:`<br><br>            `return` `p`<br><br>    `return` `-``1`|
+
+[2022暑期实习-特斯拉-笔试_牛客网](https://www.nowcoder.com/discuss/601167596045512704)
+
+[Tesla特斯拉一二三面面经（已oc）_牛客网](https://www.nowcoder.com/discuss/353159669868863488)
+
