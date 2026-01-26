@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "D、Codility/lessonTasks/1、iterations/BinaryGap.md",
+                "file": "D、Codility/Tesla 面经.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BinaryGap"
+              "title": "Tesla 面经"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4a1680c45e5ccb52",
@@ -183,8 +182,9 @@
   },
   "active": "ec03ff212df53815",
   "lastOpenFiles": [
-    "A、代码随想录/3、哈希表/b、有效的字母异位词.md",
     "D、Codility/lessonTasks/1、iterations/BinaryGap.md",
+    "D、Codility/Tesla 面经.md",
+    "A、代码随想录/3、哈希表/b、有效的字母异位词.md",
     "D、Codility/lessonTasks/1、iterations",
     "D、Codility/lessonsPDF/Iterations.pdf",
     "D、Codility/lessonsPDF/Iterations.pdf.crdownload",
@@ -220,7 +220,6 @@
     "A、代码随想录/未命名.md",
     "A、代码随想录/1、数组",
     "B、力扣/【简单】数组/66.加一.md",
-    "B、力扣/【简单】数组/485.最大连续1的个数.md",
     "B、力扣/相关图片/40.剪枝2.png",
     "Z、绘图集合/39png.png"
   ]
