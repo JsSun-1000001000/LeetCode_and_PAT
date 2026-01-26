@@ -452,3 +452,4 @@ In your solution, focus on **correctness**. The performance of your solution wil
 
 [Tesla特斯拉一二三面面经（已oc）_牛客网](https://www.nowcoder.com/discuss/353159669868863488)
 
+[特斯拉一面算法原题-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2393912)
