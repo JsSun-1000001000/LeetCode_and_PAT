@@ -17,5 +17,7 @@ Write an ****efficient**** algorithm for the following assumptions:
 ---
 ## Analysis
 
+要两个1之间的连续0，必须是两个1之间的，1000不算。
+给一个十进制数，返回对应二进制数的最长连续0
 
 ## Code
