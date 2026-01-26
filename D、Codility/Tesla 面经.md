@@ -292,3 +292,84 @@ select b.b1,a.a2,a.a3,b.b2 from
 (SELECT UPPER(updatedby) b1,count(updatedby) b2 from userrole GROUP BY updatedby ORDER BY createdby) b on a.a1=b.b1 )t
 
 where t.a1 is not null;
+
+---
+
+面试之前有笔试，1 easy + 1 medium + 1 sql。
+
+## 一面
+
+1. self introduction
+    
+2. more detail about ur project
+    
+3. what API you write in the project? what it does?
+    
+4. what difficulty you meet in your work?
+    
+5. 业务分层，MVC架构？
+    
+6. 说一下Spring的两个概念；有没有用过AOP模式？
+    
+7. 项目是前后端分离吗？为什么用Session存储用户信息？Session跨域问题？
+    
+8. 你刚刚提到了ThreadLocal，说一下Java里面的并发机制
+    
+9. 同步和阻塞的关系，SpringBoot里面的同步非阻塞
+    
+10. 接触过函数式编程吗？Golang和Python。开发过项目吗？
+    
+11. 会数据分析吗，接触过机器学习吗？数分会，ML不会
+    
+12. 了解前端技术vue和react吗？只会三件套
+    
+13. 了解dockerfile吗？了解k8s吗？简单说了一下
+    
+14. 知道其他中间件吗，比如rabbitMQ？会kafka，简单说了一下
+    
+15. 算法题：字符串反转，特殊字符位置不变
+    
+
+## 二面
+
+1. self introduction
+    
+2. jvm内存划分
+    
+3. jvm初始化对象的过程
+    
+4. 堆栈的区别
+    
+5. 数组拷贝的内存分配过程
+    
+6. 数组和链表的区别，使用场景
+    
+7. 算法题：矩阵旋转
+    
+8. 算法题：最长回文子串
+    
+
+## 三面
+
+1. 介绍一下项目
+    
+2. 有什么技术难点？这个方案是你自己提出的吗？
+    
+3. 为什么用MySQL，为什么用索引？
+    
+4. docker用的什么？k8s？
+    
+5. 有转正意向吗？
+    
+6. let's transfer to English, why do u wanna join Tesla
+    
+7. introduce something about microservice architect
+    
+8. what the difference between Kafka and rabbitMQ?
+    
+
+  
+  
+作者：ShawnLee0223  
+链接：[https://www.nowcoder.com/discuss/353159669868863488](https://www.nowcoder.com/discuss/353159669868863488)  
+来源：牛客网
