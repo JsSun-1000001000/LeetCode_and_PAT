@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A、代码随想录/3、哈希表/b、有效的字母异位词.md",
+                "file": "D、Codility/lessonTasks/1、iterations/BinaryGap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "b、有效的字母异位词"
+              "title": "BinaryGap"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4a1680c45e5ccb52",
@@ -180,8 +181,11 @@
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "f1de8e800c337287",
+  "active": "ec03ff212df53815",
   "lastOpenFiles": [
+    "A、代码随想录/3、哈希表/b、有效的字母异位词.md",
+    "D、Codility/lessonTasks/1、iterations/BinaryGap.md",
+    "D、Codility/lessonTasks/1、iterations",
     "D、Codility/lessonsPDF/Iterations.pdf",
     "D、Codility/lessonsPDF/Iterations.pdf.crdownload",
     "D、Codility/Exercises",
@@ -189,7 +193,6 @@
     "D、Codility/lessonsPDF",
     "D、Codility",
     "A、代码随想录/3、哈希表/a、哈希表基础.md",
-    "A、代码随想录/3、哈希表/b、有效的字母异位词.md",
     "A、代码随想录/2、链表/g、总结.md",
     "A、代码随想录/3、哈希表",
     "A、代码随想录/2、链表/链表总结.png",
@@ -216,8 +219,6 @@
     "A、代码随想录/1、数组/a、二分查找.md",
     "A、代码随想录/未命名.md",
     "A、代码随想录/1、数组",
-    "A、代码随想录/1、数组",
-    "A、代码随想录",
     "B、力扣/【简单】数组/66.加一.md",
     "B、力扣/【简单】数组/485.最大连续1的个数.md",
     "B、力扣/相关图片/40.剪枝2.png",
