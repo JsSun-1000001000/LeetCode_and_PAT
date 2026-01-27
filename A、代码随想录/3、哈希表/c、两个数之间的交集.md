@@ -27,3 +27,5 @@ public:
 - 时间复杂度: O(n + m) m 是最后要把 set转成vector
 - 空间复杂度: O(n)
 
+如果题目范围比较小，可以用vector做哈希表
+
