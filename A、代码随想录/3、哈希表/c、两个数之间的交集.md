@@ -29,3 +29,31 @@ public:
 
 如果题目范围比较小，可以用vector做哈希表
 
+## [350. 两个数组的交集 II - 力扣（LeetCode）](https://leetcode.cn/problems/intersection-of-two-arrays-ii/description/)
+
+老阴逼，尼玛阴的一批，可重复你他妈是一点不说啊，我说怎么题一样还能有个2出来
+
+把`unordered_set` 换成 `multiset` 就好了
+
+```cpp
+class Solution {
+public:
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        multiset<int> result;
+        int hashtable[1005] = {0};
+
+        for( int i : nums1){
+            hashtable[i] ++;
+        }
+
+        for( int j : nums2){
+            if(hashtable[j] > 0){
+                result.insert(j);
+                hashtable[j]--;
+            }
+        }
+        return vector<int>(result.begin(),result.end());
+    }
+};
+```
+
