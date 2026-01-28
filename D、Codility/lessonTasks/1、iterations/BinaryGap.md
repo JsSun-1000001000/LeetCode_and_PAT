@@ -21,3 +21,42 @@ Write an ****efficient**** algorithm for the following assumptions:
 给一个十进制数，返回对应二进制数的最长连续0
 
 ## Code
+```cpp
+// you can use includes, for example:
+// #include <algorithm>
+// you can write to stdout for debugging purposes, e.g.
+// cout << "this is a debug message" << endl;
+
+#include <stack>
+int solution(int N) {
+    // Implement your solution here
+    //先把二进制数剥离出来
+    //最高位一定是1 除非他是0 从最高位看 是0直接返回
+    //两个参数记录，一个记录到下一个1之间有多少0，一个记录当前最大数量0
+    //如果最后一位是0，最后一次统计不算数
+    //可以看出 用栈会比较有意思
+    stack<int> binarynum;
+    int count = 0;
+    int max0 = 0;
+    if(N == 0 || N == 1){
+        return max0;
+    }
+    while(N){
+        int bt = N % 2;
+        binarynum.push(bt);
+        N = N / 2;
+    }
+    while(!binarynum.empty()){
+        if(binarynum.top() == 1){
+            max0 = max(max0, count);
+            binarynum.pop();
+            count = 0;
+        }
+        else{
+            count++;
+            binarynum.pop();
+        }
+    }
+    return max0;
+}
+```
