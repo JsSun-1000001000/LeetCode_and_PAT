@@ -13,6 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "A、代码随想录/1、数组/e、区间和.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "e、区间和"
+            }
+          }
+        ]
+      },
+      {
+        "id": "daed90bd35c7c78a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55f339d72325b472",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "E、CodeTop/网易/1、最近3个月/53、最大子数组和（26.1.28）.md",
                 "mode": "source",
                 "source": false
@@ -180,11 +200,12 @@
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "ec03ff212df53815",
+  "active": "55f339d72325b472",
   "lastOpenFiles": [
+    "A、代码随想录/1、数组/e、区间和.md",
+    "E、CodeTop/网易/1、最近3个月/53、最大子数组和（26.1.28）.md",
     "E、CodeTop/网易/1、最近3个月/841、钥匙和房间（25.12.25）.md",
     "E、CodeTop/网易/1、最近3个月/451、根据字符出现频率排序（26.1.12）.md",
-    "E、CodeTop/网易/1、最近3个月/53、最大子数组和（26.1.28）.md",
     "A、代码随想录/3、哈希表/f、四数相加2.md",
     "E、CodeTop/网易/3、最近一年",
     "E、CodeTop/网易/2、最近半年",
@@ -214,7 +235,6 @@
     "A、代码随想录/1、数组/g、总结.md",
     "A、代码随想录/1、数组/数组方法.png",
     "A、代码随想录/1、数组/f、开发商买土地.md",
-    "A、代码随想录/1、数组/e、区间和.md",
     "A、代码随想录/1、数组/d、螺旋矩阵.md",
     "B、力扣/【中级】数组/59、螺旋矩阵2.md",
     "B、力扣/【中级】数组/289、生命游戏.md",
