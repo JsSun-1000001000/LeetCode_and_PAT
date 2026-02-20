@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "E、CodeTop/字节/415. 字符串相加.md",
+                "file": "A、代码随想录/2、链表/b、反转链表.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "415. 字符串相加"
+              "title": "b、反转链表"
             }
           }
         ]
@@ -182,8 +182,8 @@
   },
   "active": "55f339d72325b472",
   "lastOpenFiles": [
-    "A、代码随想录/2、链表/e、链表相交.md",
     "E、CodeTop/字节/415. 字符串相加.md",
+    "A、代码随想录/2、链表/e、链表相交.md",
     "E、CodeTop/字节/111. 二叉树最小深度.md",
     "A、代码随想录/7、二叉树/b、二叉树层序遍历.md",
     "A、代码随想录/6、栈与队列/a、栈与队列基础.md",
