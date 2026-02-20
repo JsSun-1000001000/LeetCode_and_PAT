@@ -59,5 +59,21 @@ public:
 
 哈希做法：
 ```cpp
-
+ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        unordered_set<ListNode *> visited;
+        ListNode* temp = headA;
+        while(temp != nullptr){
+            visited.insert(temp);
+            temp = temp->next;
+        }
+        temp = headB;
+        while(temp != nullptr){
+            if(visited.count(temp)){
+            //if(visited.find(temp) != visited.end())也可以
+                return temp;
+            }
+            temp = temp->next;
+        }
+        return nullptr;
+    }
 ```
